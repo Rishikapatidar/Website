@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navneet Photography | Professional Portrait & Event Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Navneet Photography</h1>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#reels">Reels</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Capturing Your Precious Moments</h2>
+            <p>Professional Photography for Weddings, Portraits & Events</p>
+            <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Featured Carousel -->
+    <section id="featured" class="featured-carousel">
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <img src="WhatsApp Image 2026-02-28 at 10.45.35.jpeg" alt="Featured Photo 1" class="carousel-image active">
+                <img src="image 1.jpeg" alt="Featured Photo 2" class="carousel-image">
+                <img src="image 4.jpeg" alt="Featured Photo 3" class="carousel-image">
+                <img src="image 3.jpeg" alt="Featured Photo 4" class="carousel-image">
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio Gallery</h2>
+            <p class="section-subtitle">Explore our latest work</p>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="event">Event</button>
+
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Sample Gallery Items - Replace with your photos -->
+                <div class="gallery-item" data-category="wedding">
+                    <img src="image 1.jpeg" alt="Wedding Photo 1">
+                    <div class="gallery-overlay">
+                        <h3>Wedding Ceremony</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <img src="image 2.jpeg" alt="Portrait Photo 1">
+                    <div class="gallery-overlay">
+                        <h3>Professional Portrait</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="event">
+                    <img src="image 3.jpeg" alt="Event Photo 1">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Event</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="image 4.jpeg" alt="Nature Photo 1">
+                    <div class="gallery-overlay">
+                        <h3>Nature Photography</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://via.placeholder.com/400x300?text=Wedding+Photo+2" alt="Wedding Photo 2">
+                    <div class="gallery-overlay">
+                        <h3>Bride & Groom</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portrait">
+                    <img src="https://via.placeholder.com/400x300?text=Portrait+Photo+2" alt="Portrait Photo 2">
+                    <div class="gallery-overlay">
+                        <h3>Family Portrait</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="event">
+                    <img src="https://via.placeholder.com/400x300?text=Event+Photo+2" alt="Event Photo 2">
+                    <div class="gallery-overlay">
+                        <h3>Birthday Celebration</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://via.placeholder.com/400x300?text=Nature+Photo+2" alt="Nature Photo 2">
+                    <div class="gallery-overlay">
+                        <h3>Landscape</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reels/Videos Section -->
+    <section id="reels" class="reels">
+        <div class="container">
+            <h2>Video Reels</h2>
+            <p class="section-subtitle">Watch our latest video moments</p>
+            
+            <div class="reels-carousel-container">
+                <div class="reels-wrapper">
+                    <div class="reel-item active">
+                        <video width="100%" height="auto" controls controlsList="nodownload">
+                            <source src="WhatsApp Video 2026-02-28 at 10.23.14.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </div>
+
+                    <div class="reel-item">
+                        <video width="100%" height="auto" controls controlsList="nodownload">
+                            <source src="video 2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </div>
+
+                    <div class="reel-item">
+                        <video width="100%" height="auto" controls controlsList="nodownload">
+                            <source src="video 4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                      
+                    </div>
+
+                    <div class="reel-item">
+                        <video width="100%" height="auto" controls controlsList="nodownload">
+                            <source src="video 3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reel Navigation -->
+            <div class="reels-controls">
+                <button class="reel-btn prev-reel" onclick="changeReel(-1)">❮ Previous</button>
+                <div class="reel-counter">
+                    <span class="current-reel">1</span> / <span class="total-reels">4</span>
+                </div>
+                <button class="reel-btn next-reel" onclick="changeReel(1)">Next ❯</button>
+            </div>
+
+            <!-- Reel Dots -->
+            <div class="reel-dots">
+                <span class="reel-dot active" onclick="selectReel(0)"></span>
+                <span class="reel-dot" onclick="selectReel(1)"></span>
+                <span class="reel-dot" onclick="selectReel(2)"></span>
+                <span class="reel-dot" onclick="selectReel(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">Professional photography packages for every occasion</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-ring"></i>
+                    <h3>Wedding Photography</h3>
+                    <p>Capture every magical moment of your special day with our professional wedding photography services.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-user"></i>
+                    <h3>Portrait Sessions</h3>
+                    <p>Professional headshots and family portraits for any occasion. Studio or outdoor sessions available.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Event Photography</h3>
+                    <p>Corporate events, parties, and celebrations covered with professional expertise and creative vision.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-images"></i>
+                    <h3>Photo Editing</h3>
+                    <p>Professional post-processing and editing to enhance your photos with perfect colors and tone.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-compact-disc"></i>
+                    <h3>Album Design</h3>
+                    <p>Custom-designed photo albums and printed collections to preserve your memories beautifully.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Video Coverage</h3>
+                    <p>Professional videography services to capture cinematic moments from your special events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Navneet Photography</h2>
+                    <p>With over 10 years of experience in professional photography, Navneet has captured thousands of precious moments for families, couples, and businesses across the region.</p>
+                    <p>Specializing in portrait, wedding, and event photography, we believe in storytelling through images. Every photograph is a reflection of our passion for capturing raw emotions and authentic moments.</p>
+                    <p>Our approach combines technical expertise with creative vision to deliver images that you'll treasure forever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Let's create beautiful memories together</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 XXXXX XXXXX</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>navneet@photography.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Your City, Country</p>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://www.instagram.com/navneetphotography__/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Navneet Photography. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
